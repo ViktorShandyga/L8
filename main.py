@@ -2,10 +2,10 @@ class Pet:
     def __init__(self, name, species="cat"):
         self.name = name
         self.species = species
-        self.hunger = 50   # Рівень голоду (0 - ситий, 100 - дуже голодний)
-        self.energy = 50   # Рівень енергії (0 - сонний, 100 - дуже бадьорий)
-        self.happiness = 50 # Рівень задоволення (0 - сумний, 100 - дуже задоволений)
-        self.health = 100   # Рівень здоров'я (0 - хворий, 100 - здоровий)
+        self.hunger = 50
+        self.energy = 50
+        self.happiness = 50
+        self.health = 100
 
     def feed(self):
         if self.hunger > 20:
@@ -48,7 +48,6 @@ class Pet:
         else:
             print(f"{self.name} здоровий(а) і не потребує лікаря.")
 
-# Приклад використання
 my_pet = Pet(name="Мурчик", species="котик")
 my_pet.check_status()
 my_pet.feed()
